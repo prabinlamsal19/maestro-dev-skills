@@ -1,6 +1,18 @@
-# @raphaelbarbosaqwerty/maestro-skills
+# Maestro Skills
 
 Comprehensive Maestro E2E UI testing skill for AI coding assistants.
+
+## Installation
+
+```bash
+npx skills add raphaelbarbosaqwerty/maestro-dev-skills
+```
+
+Or via npm:
+
+```bash
+npm install @raphaelbarbosaqwerty/maestro-skills
+```
 
 ## Platforms
 
@@ -10,19 +22,13 @@ Comprehensive Maestro E2E UI testing skill for AI coding assistants.
 - ✅ React Native
 - ✅ Web (Chromium)
 
-## Installation
-
-```bash
-npm install @raphaelbarbosaqwerty/maestro-skills
-```
-
 ## Usage
 
 This skill provides comprehensive documentation for AI coding assistants to generate Maestro E2E tests. The main entry point is `SKILL.md`.
 
 ### Structure
 
-```
+```text
 ├── SKILL.md              # Main skill file with overview
 └── rules/
     ├── installation.md
