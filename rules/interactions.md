@@ -165,3 +165,24 @@ MUST be called before tapping elements obscured by keyboard:
           direction: LEFT
       - takeScreenshot: "slide_${i}"
 ```
+
+## Hardware Keys
+
+### pressKey
+
+Press physical/hardware keys on the device:
+
+```yaml
+# Press enter to submit
+- pressKey: "enter"
+
+# Press home button
+- pressKey: "home"
+
+# Press back (Android only)
+- pressKey: "back"
+```
+
+Supported keys: `home`, `lock`, `enter`, `backspace`, `volume up`, `volume down`, `back` (Android), `power` (Android), `tab` (Android). Android TV remote keys also supported.
+
+See [commands.md](../commands.md#presskey-supported-keys) for the full key list.

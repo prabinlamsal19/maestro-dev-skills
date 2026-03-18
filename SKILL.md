@@ -29,8 +29,8 @@ Read individual rule files for detailed explanations and code examples:
 
 - [rules/installation.md](rules/installation.md) - Installing Maestro on macOS, Linux, and Windows
 - [rules/test-structure.md](rules/test-structure.md) - YAML test structure, appId, env variables, and flow definition
-- [rules/commands.md](rules/commands.md) - Complete reference of 40+ Maestro commands
-- [rules/selectors.md](rules/selectors.md) - Element targeting with id, text, index, and matchers
+- [rules/commands.md](rules/commands.md) - Complete reference of 43 Maestro commands
+- [rules/selectors.md](rules/selectors.md) - Element targeting with id, text, index, css, relational selectors, traits, and dimension matchers
 - [rules/assertions.md](rules/assertions.md) - assertVisible, assertNotVisible, assertTrue, and AI assertions
 - [rules/interactions.md](rules/interactions.md) - tapOn, inputText, scroll, swipe, and gesture commands
 - [rules/permissions.md](rules/permissions.md) - iOS vs Android permission configuration and dialog handling

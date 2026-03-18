@@ -69,6 +69,23 @@ Add `data-testid` to HTML elements:
 <button id="submit">Submit</button>
 ```
 
+### By CSS Selector
+
+Target elements using standard CSS selector syntax:
+
+```yaml
+- tapOn:
+    css: ".secondaryButton"
+
+- assertVisible:
+    css: "#main-header"
+
+- tapOn:
+    css: "[data-action='submit']"
+```
+
+> **Note:** The `css` selector does not support regular expressions. It uses standard CSS selector syntax.
+
 ## Form Interactions
 
 ```yaml
