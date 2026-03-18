@@ -15,6 +15,24 @@ Capture current screen state:
 
 Screenshots saved to test output directory.
 
+## assertScreenshot
+
+Compare current screen against a reference screenshot for visual regression testing:
+
+```yaml
+# Simple comparison (95% match threshold)
+- assertScreenshot: reference.png
+
+# With crop and custom threshold
+- assertScreenshot:
+    path: login_screen.png
+    cropOn:
+      id: hero_banner
+    thresholdPercentage: 98
+```
+
+See [assertions.md](assertions.md#assertscreenshot) for full parameter details.
+
 ### At Key Points
 
 ```yaml

@@ -1,6 +1,6 @@
 ---
 name: commands
-description: Complete reference of 40+ Maestro commands
+description: Complete reference of 43 Maestro commands
 metadata:
   tags: commands, api, reference, launchApp, tapOn
 ---
@@ -38,6 +38,7 @@ metadata:
 | `inputText`    | Type text            | `- inputText: "Hello"`                   |
 | `eraseText`    | Delete text          | `- eraseText: { charactersToErase: 10 }` |
 | `pasteText`    | Paste from clipboard | `- pasteText`                            |
+| `pressKey`     | Press hardware key   | `- pressKey: "enter"`                    |
 | `hideKeyboard` | Dismiss keyboard     | `- hideKeyboard`                         |
 
 ## Navigation
@@ -52,11 +53,12 @@ metadata:
 
 ## Assertions
 
-| Command            | Description                  | Example                       |
-| ------------------ | ---------------------------- | ----------------------------- |
-| `assertVisible`    | Assert element visible       | `- assertVisible: "Welcome"`  |
-| `assertNotVisible` | Assert element NOT visible   | `- assertNotVisible: "Error"` |
-| `assertTrue`       | Assert JavaScript expression | `- assertTrue: ${count > 0}`  |
+| Command            | Description                    | Example                                     |
+| ------------------ | ------------------------------ | ------------------------------------------- |
+| `assertVisible`    | Assert element visible         | `- assertVisible: "Welcome"`                |
+| `assertNotVisible` | Assert element NOT visible     | `- assertNotVisible: "Error"`               |
+| `assertTrue`       | Assert JavaScript expression   | `- assertTrue: ${count > 0}`                |
+| `assertScreenshot` | Visual regression comparison   | `- assertScreenshot: "reference.png"`       |
 
 ## Screenshots & Recording
 
@@ -68,12 +70,14 @@ metadata:
 
 ## Device Control
 
-| Command           | Description              | Example                                                |
-| ----------------- | ------------------------ | ------------------------------------------------------ |
-| `setLocation`     | Mock GPS location        | `- setLocation: { lat: 40.7, long: -74.0 }`            |
-| `setAirplaneMode` | Toggle airplane mode     | `- setAirplaneMode: { enabled: true }`                 |
-| `setOrientation`  | Set screen orientation   | `- setOrientation: { orientation: LANDSCAPE }`         |
-| `setPermissions`  | Set permissions mid-flow | `- setPermissions: { permissions: { camera: allow } }` |
+| Command               | Description              | Example                                                |
+| --------------------- | ------------------------ | ------------------------------------------------------ |
+| `setLocation`         | Mock GPS location        | `- setLocation: { lat: 40.7, long: -74.0 }`            |
+| `setAirplaneMode`     | Set airplane mode        | `- setAirplaneMode: { enabled: true }`                 |
+| `toggleAirplaneMode`  | Toggle airplane mode     | `- toggleAirplaneMode`                                 |
+| `setOrientation`      | Set screen orientation   | `- setOrientation: { orientation: LANDSCAPE }`         |
+| `setPermissions`      | Set permissions mid-flow | `- setPermissions: { permissions: { camera: allow } }` |
+| `travel`              | Simulate GPS route       | `- travel: { points: ["48.85,2.29"], speed: 150000 }` |
 
 ## Flow Control
 

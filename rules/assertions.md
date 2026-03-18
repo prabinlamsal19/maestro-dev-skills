@@ -77,6 +77,30 @@ Detects:
 
 ## Assertion Patterns
 
+### assertScreenshot
+
+Visual regression testing — compare current screen against a reference screenshot:
+
+```yaml
+# Simple comparison
+- assertScreenshot: splash.png
+
+# With options
+- assertScreenshot:
+    path: screen.png
+    cropOn:
+      id: banner
+    thresholdPercentage: 98
+    label: "Verify banner matches"
+```
+
+| Parameter             | Type     | Description                                |
+| --------------------- | -------- | ------------------------------------------ |
+| `path`                | String   | Reference screenshot path                  |
+| `cropOn`              | Selector | Optional. Crop to element before comparing |
+| `thresholdPercentage` | Double   | Optional. Match % required (default: 95.0) |
+| `label`               | String   | Optional. Display message during eval      |
+
 ### Wait Then Assert
 
 ```yaml
